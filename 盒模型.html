@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title> 盒模型</title>
+		<style type="text/css">
+				.padding {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				/*padding-top: 20px;
+			padding-bottom: 29px;
+			padding-left: 30px;
+			padding-right: 50px;
+		*/
+				padding: 10px 20px 30px 40px;
+			}
+			/*
+		    合写
+		    padding的值
+		    一个值    四个方向
+		    两个值    上下+左右
+		    三个值     上+左右+下
+		    四个值     上+右+下+左
+		    
+		 * 
+		 * */
+			
+			.bat {
+				width: 65px;
+				height: 22px;
+				background-color: #3388FF;
+				color: white;
+				padding-bottom: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 10px;
+			}
+			
+			.border {
+				width: 300px;
+				height: 300px;
+				background-color: blue;
+				/*border-top: 6px solid red;
+		border-bottom:10px dashed goldenrod;
+		border-left: 20px dotted yellow;
+		border-right: 20px dashed olivedrab;*/
+				/*合写
+		 
+	             boeder	 */
+				/** 
+				border: 10px solid hotpink;
+			    border-color: firebrick;
+			    border-width: 1px  4px 4px 5px;*/
+			}
+			
+			.border {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				/*
+				 margin*/
+				margin-left: 20px;
+				margin-right: 40px;
+				margin-bottom: 10px;
+				margin-top: 20px;
+				/* marger
+				    一个值  上下左右
+				    marger： 30px
+				    两个值  上下+左右
+				    三个值     上+左右+下
+				    四个值     上+右+下+左
+				 * 
+				 * 
+				 * 
+				 * 
+				 * */
+			}
+			
+			.div1 {
+				width: 200px;
+				height: 100px;
+				background-color: red;
+				margin-bottom: 200px;
+			}
+			
+			.div2 {
+				width: 100px;
+				height: 100px;
+				background-color: firebrick;
+				margin-top: 100px;
+			}
+			
+			.div3 {
+				width: 100px;
+				height: 200px;
+				/*height: 100px;*/
+				background-color: black;
+				/*padding-top: 100px;*/
+				/*border: 5px solid red;*/
+				/*overflow: hidden;*/
+				display: inline-block;}
+				.div4 {
+					width: 50px;
+					height: 100px;
+					background-color: peru;
+					margin-top: 100px;
+				}
+		</style>
+
+	</head>
+
+	<body>
+		<!--
+			html文档是由一个个的html元素组成
+			盒模型：把每个html元素的组成想象成一个盒子
+			盒模型的结构
+			盒模型是如何影响元素的位置
+		-->
+		<!--     这是普通盒模型                （有两种盒模型（普通和怪异   ）          ）
+			盒模型的结构
+			 1  content  ( 内容)   ：用来显示标签里的内容
+			 2  padding （内边距）    ：内容与边框的距离
+			 3  border  （边框）         ：元素的距离
+			 4  margin  （外边距）    ：元素与元素之间的距离
+			 
+			 两种模型在盒子的组成部分  ，写法， 用法上没有区别
+			 两者的区别在于对于盒子的大小的计算不同
+			 
+			 普通盒子模型在盒子的大小计算
+			 盒子的宽度=width+左右padding+左右border+左右marging
+			 盒子的长度=height+上下marging+上下border+上下padding
+			 
+			
+		-->
+
+		<!--
+			content   内容
+			可以直接往元素里面写文字或者添加标签
+			或者认为的设置宽高和高度
+			
+		-->
+
+		<!--
+			padding  内边距
+			背景色能渲染到padding区域
+		-->
+		<!--<div class="padding">这是测拭padding的div的元素</div>
+		<div class="bat">摆布一下</div>-->
+		<!--
+			border
+			一条完整的边框由3个值
+			1  边框的宽度
+			2 边框的类型
+			 a. solid  表示实线
+			 b. dashed 表示虚线1
+			 c. dotted 表示虚线2
+			 
+			3 边框的颜色
+			
+			背景色渲染到边框区域
+			边框的三个值  只有边框类型是必须值  其余两个可省略
+			如果宽度省略  默认值3px
+			如果颜色省略  默认颜色是黑色
+			maragin 外边框
+			背景色不会渲染到margin区域
+		
+			margin在使用的过程中的坑
+			   相邻兄弟元素在垂直方向的margin会出现融合
+			    融合的标准是以较大的margin为最终值。
+			解决办法
+			    尽量只给一个元素设置垂直的margin
+			    给两个元素中任何一个添加display： inline-block
+			   
+			   
+			   
+			父子关系的元素在垂直方向上margin会出现传递
+			     解决办法
+			        用父级的padding代替子级的margin
+			        给父级加边框
+			        给父级添加overflow：hidden
+			        给父级添加display：inline-block
+			        
+		-->
+		<!--<div class="border">终极标靶的经济</div>
+		<div class="div1"></div>
+		<div class="div2"></div>"
+		-->
+		<div class="div3">
+			<div class="div4">
+			</div>
+		</div>
+
+	</body>
+
+</html>
