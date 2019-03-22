@@ -3,7 +3,6 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>这是军的盒模型</title>
 
 		<title> 盒模型1</title>
 
@@ -28,10 +27,10 @@
 		    两个值    上下+左右
 		    三个值     上+左右+下
 		    四个值     上+右+下+左
-
-		 *
+		    
+		 * 
 		 * */
-
+			
 			.bat {
 				width: 65px;
 				height: 22px;
@@ -42,7 +41,7 @@
 				padding-right: 10px;
 				padding-top: 10px;
 			}
-
+			
 			.border {
 				width: 300px;
 				height: 300px;
@@ -52,14 +51,14 @@
 		border-left: 20px dotted yellow;
 		border-right: 20px dashed olivedrab;*/
 				/*合写
-
+		 
 	             boeder	 */
-				/**
+				/** 
 				border: 10px solid hotpink;
 			    border-color: firebrick;
 			    border-width: 1px  4px 4px 5px;*/
 			}
-
+			
 			.border {
 				width: 200px;
 				height: 200px;
@@ -76,27 +75,27 @@
 				    两个值  上下+左右
 				    三个值     上+左右+下
 				    四个值     上+右+下+左
-				 *
-				 *
-				 *
-				 *
+				 * 
+				 * 
+				 * 
+				 * 
 				 * */
 			}
-
+			
 			.div1 {
 				width: 200px;
 				height: 100px;
 				background-color: red;
 				margin-bottom: 200px;
 			}
-
+			
 			.div2 {
 				width: 100px;
 				height: 100px;
 				background-color: firebrick;
 				margin-top: 100px;
 			}
-
+			
 			.div3 {
 				width: 100px;
 				height: 200px;
@@ -129,22 +128,22 @@
 			 2  padding （内边距）    ：内容与边框的距离
 			 3  border  （边框）         ：元素的距离
 			 4  margin  （外边距）    ：元素与元素之间的距离
-
+			 
 			 两种模型在盒子的组成部分  ，写法， 用法上没有区别
 			 两者的区别在于对于盒子的大小的计算不同
-
+			 
 			 普通盒子模型在盒子的大小计算
 			 盒子的宽度=width+左右padding+左右border+左右marging
 			 盒子的长度=height+上下marging+上下border+上下padding
-
-
+			 
+			
 		-->
 
 		<!--
 			content   内容
 			可以直接往元素里面写文字或者添加标签
 			或者认为的设置宽高和高度
-
+			
 		-->
 
 		<!--
@@ -161,32 +160,32 @@
 			 a. solid  表示实线
 			 b. dashed 表示虚线1
 			 c. dotted 表示虚线2
-
+			 
 			3 边框的颜色
-
+			
 			背景色渲染到边框区域
 			边框的三个值  只有边框类型是必须值  其余两个可省略
 			如果宽度省略  默认值3px
 			如果颜色省略  默认颜色是黑色
 			maragin 外边框
 			背景色不会渲染到margin区域
-
+		
 			margin在使用的过程中的坑
 			   相邻兄弟元素在垂直方向的margin会出现融合
 			    融合的标准是以较大的margin为最终值。
 			解决办法
 			    尽量只给一个元素设置垂直的margin
 			    给两个元素中任何一个添加display： inline-block
-
-
-
+			   
+			   
+			   
 			父子关系的元素在垂直方向上margin会出现传递
 			     解决办法
 			        用父级的padding代替子级的margin
 			        给父级加边框
 			        给父级添加overflow：hidden
 			        给父级添加display：inline-block
-
+			        
 		-->
 		<!--<div class="border">终极标靶的经济</div>
 		<div class="div1"></div>
